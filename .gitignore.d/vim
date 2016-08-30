@@ -146,7 +146,8 @@
 !/.config/nvim/undo
 !/.config/nvim/undo/.gitignore
 !/.config/nvim/.VimballRecord
-!/.vim
-!/.vimrc
+!/.ctags
 !/.gitignore.d
 !/.gitignore.d/vim
+!/.vim
+!/.vimrc
