@@ -723,14 +723,18 @@ let g:PadCmdMenu = {
     \ 'title': 'Notes',
     \ 'commands': [
         \ 'abort',
-        \ 'Pad new',
-        \ 'Pad ls',
+        \ "normal \<Plug>(pad-new)",
+        \ "normal \<Plug>(pad-list)",
         \ 'Pad! ls',
+        \ "normal \<Plug>(pad-search)",
+        \ "call pad#AddModeline()",
         \ ],
     \ 'options': [
         \ '&new',
         \ '&list',
         \ 'list &all',
+        \ '&search',
+        \ '&modeline',
         \ ],
 \ }
 nmap <silent> <Leader>n :call CmdMenu(PadCmdMenu)<cr>
