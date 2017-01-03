@@ -204,7 +204,6 @@ endif
 " add filetype to files that need it
 autocmd BufRead,BufNewFile *.snippet? setlocal filetype=snippet sts=8 sw=8 noet
 autocmd BufRead,BufNewFile *.mustache,*.ms setlocal filetype=mustache
-autocmd BufRead,BufNewFile *.md setlocal filetype=markdown
 
 " some files need real tabs (I default to spaces for indentation)
 autocmd FileType make setlocal noexpandtab
@@ -862,11 +861,21 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
-let g:tagbar_type_yaml = {
+let g:tagbar_type_ansible = {
     \ 'ctagstype' : 'ansible',
     \ 'kinds'     : [
         \ 'k:tasks'
     \ ]
+\ }
+
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+        \ 'h:headings',
+        \ 'l:links',
+        \ 'i:images'
+    \ ],
+    \ "sort" : 0
 \ }
 
 " dbext
