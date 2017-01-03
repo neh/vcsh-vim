@@ -56,6 +56,7 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'ehamberg/vim-cute-python'
 Plug 'fatih/vim-go'
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-scripts/openscad.vim'
 
 " The Rest
 Plug 'airblade/vim-gitgutter'
