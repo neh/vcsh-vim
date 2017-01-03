@@ -223,7 +223,7 @@ autocmd FileType ruby setlocal sts=2 sw=2 ts=2
 autocmd BufReadPost quickfix setlocal nowrap
 
 " re-read vimrc after writing it
-autocmd BufWritePost *vimrc source $HOME/.vimrc | call lightline#init() | call lightline#colorscheme() | call lightline#update()
+autocmd BufWritePost *vimrc,init.vim source $HOME/.config/nvim/init.vim | call lightline#init() | call lightline#colorscheme() | call lightline#update()
 autocmd BufRead *vimrc,init.vim,*zshrc,*tmux.conf setlocal foldmethod=marker
 
 autocmd BufRead,BufNewFile *.zsh-theme setlocal filetype=zsh
