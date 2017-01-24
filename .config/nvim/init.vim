@@ -156,6 +156,8 @@ let g:maximizer_set_default_mapping = 0
 Plug 'tpope/vim-endwise'
 Plug 'cespare/vim-toml'
 Plug 'dohsimpson/vim-macroeditor'
+Plug 'Alok/notational-fzf-vim'
+let g:nv_directories = ['~/notes']
 
 " Colors
 Plug 'rainux/vim-desert-warm-256'
@@ -728,6 +730,7 @@ let g:PadCmdMenu = {
         \ 'Pad! ls',
         \ "normal \<Plug>(pad-search)",
         \ "call pad#AddModeline()",
+        \ "NV",
         \ ],
     \ 'options': [
         \ '&new',
@@ -735,6 +738,7 @@ let g:PadCmdMenu = {
         \ 'list &all',
         \ '&search',
         \ '&modeline',
+        \ '&velocity',
         \ ],
 \ }
 nmap <silent> <Leader>n :call CmdMenu(PadCmdMenu)<cr>
